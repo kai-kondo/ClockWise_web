@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React from "react";
 import { Typography } from "@material-tailwind/react";
 import {
@@ -41,62 +41,46 @@ export function WhyChooseUs() {
   return (
     <section className="w-full max-w-4xl mx-auto flex flex-col items-center px-4 py-10">
       <Typography variant="h2" className="text-center mb-2" color="blue-gray">
-        Why choose our course?
+        Business
       </Typography>
       <Typography
         variant="lead"
         className="mb-16 w-full text-center font-normal !text-gray-500 lg:w-10/12"
       >
-        Discover the unique advantages, benefits, and standout features that set
-        our course apart from the rest.
+        - 事業内容 -
       </Typography>
       <div className="mt-8">
         <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
-          <BackgroundCard title="Expert Instructors">
-            Learn from industry professionals with years of hands-on experience
-            in React development.
-          </BackgroundCard>
+          <Image
+            width={768}
+            height={500}
+            src="/image/logo7.png"
+            className="h-full max-h-[500px] w-full object-cover scale-110"
+            alt="online course"
+          />
           <div className="space-y-8">
             <div className="my-4">
-              <Option icon={CloudIcon} title="React Fundamentals">
-                Start with the basics. Understand React&apos;s core concepts,
-                component structure, and the virtual DOM.
+              <Option icon={CloudIcon} title="システム開発事業">
+                軽貨物配送業に特化した業務管理システム「ケイラクラウド」を開発・運用
               </Option>
             </div>
-            <div className="mb-4 flex gap-4">
-              <Option icon={ChartPieIcon} title="State and Props">
-                Learn how to manage component state and utilize props to pass
-                data between components.
-              </Option>
-            </div>
-            <Option icon={Cog6ToothIcon} title="Component Lifecycle">
-              Dive into the lifecycle of React components and harness its power
-              to control your application&apos;s behavior.
-            </Option>
           </div>
         </div>
         <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
           <div className="space-y-8">
             <div className="my-4">
-              <Option icon={KeyIcon} title="Routing with React Router">
-                Create single-page applications (SPAs) with seamless navigation
-                using React Router.
+              <Option icon={KeyIcon} title="機械向けソフトウェア開発事業">
+                精密板金加工の工作機械向けカスタマイズソフトウェア開発・運用
               </Option>
             </div>
-            <div className="mb-4 flex gap-4">
-              <Option icon={UsersIcon} title="Handling Forms">
-                Master form handling in React and manage user input effectively.
-              </Option>
-            </div>
-            <Option icon={CloudArrowDownIcon} title="State Management">
-              Explore state management options, including local component state
-              and global state using Redux or Context API.
-            </Option>
           </div>
-          <BackgroundCard title="Supportive Community">
-            Connect with fellow learners, share experiences, and get support
-            from instructors and peers.
-          </BackgroundCard>
+          <Image
+            width={768}
+            height={500}
+            src="/image/3470026_m.jpg"
+            className="h-full max-h-[500px] w-full object-cover scale-110"
+            alt="online course"
+          />
         </div>
       </div>
     </section>
