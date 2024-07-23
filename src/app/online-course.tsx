@@ -39,15 +39,23 @@ export function OnlineCourse() {
           <Image
             width={768}
             height={500}
-            src="/image/online-course.png"
+            src="/image/Hero_logo.png"
             className="h-full max-h-[500px] w-full object-cover scale-110"
             alt="online course"
           />
         </div>
         <div className="col-span-2 lg:pl-24">
-          <Typography variant="h2" color="blue-gray" className="mb-4">
-            Online Course
-          </Typography>
+          <div className="flex items-center mb-4">
+            <Typography variant="h2" color="blue-gray" className="mr-2">
+              ケイラクラウド
+            </Typography>
+            <Image
+              width={50}
+              height={32}
+              src="/image/kraku.png"
+              alt="icon"
+            />
+          </div>
           <Typography
             variant="lead"
             className="mb-5 max-w-lg px-4 text-left text-lg !text-gray-500 lg:px-0  "
