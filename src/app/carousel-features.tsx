@@ -4,13 +4,12 @@ import Image from "next/image";
 import React from "react";
 import { Typography, Carousel } from "@material-tailwind/react";
 
-
 export function CarouselFeatures() {
   return (
     <section className="px-8 pt-40 pb-20">
       <div className="flex mb-16 flex-col items-center">
         <Typography variant="h2" className="text-center mb-2" color="blue-gray">
-          What Students Say
+          経営者ご挨拶
         </Typography>
         <Typography
           variant="lead"
@@ -38,45 +37,46 @@ export function CarouselFeatures() {
             </div>
           )}
         >
-          {new Array(2).fill("").map((_, i) => (
-            <div
-              key={i}
-              className="!relative flex grid-cols-1 flex-col-reverse gap-6 px-10 py-14 md:grid md:grid-cols-5  md:gap-14 md:py-20"
-            >
-              <div className="col-span-3 flex flex-col items-start justify-center">
-                <Typography
-                  variant="lead"
-                  color="white"
-                  className="mb-5 text-xl font-normal "
-                >
-                  Easy Shopping, Quick Delivery <br />
-                  No need to stress about shopping for books. Order online and
-                  have your textbooks and supplies delivered straight to your
-                  doorstep for free.
-                </Typography>
-                <Typography
-                  variant="small"
-                  color="white"
-                  className="font-medium uppercase"
-                >
-                  Louis Miriam,{" "}
-                  <span className="font-normal opacity-60">
-                    Web Developer @ AMAZON INC.
-                  </span>
-                </Typography>
-              </div>
-              <div className="col-span-2 flex w-full shrink-0 md:!justify-end">
-                <Image
-                  width={256}
-                  height={256}
-                  src="/image/logos/logo-amazon 3.svg"
-                  alt="testimonial image"
-                  className="h-full w-2/4 object-contain md:!w-2/3"
-                />
-              </div>
+          <div className="!relative flex grid-cols-1 flex-col-reverse gap-6 px-10 py-14 md:grid md:grid-cols-5  md:gap-14 md:py-20">
+            <div className="col-span-3 flex flex-col items-start justify-center">
+              <Typography
+                variant="lead"
+                color="white"
+                className="mb-5 text-xl font-normal "
+              >
+                <strong>~出会いを大切にともに進歩を~ </strong>
+                <br></br>
+                工作機械メーカを経て、ものづくり業界でのお客様の要望を満たすにはソフトウェアの開発が必要であると感じClockWiseSystemを創業しました。
+                <br></br>
+                現在は精密板金加工向けソフトウェア開発と並行して軽貨物配送業向けの業務管理システム「ケイラクラウド」を開発・運用を行っています。
+                <br></br>
+                <br></br>
+                「お客様に最高の満足度の商品を提供する」という理念を元、ソフトウェアとテクノロジーの力で邁進しよりクリエイティブで豊かな働き方の提案をしていきたいと考えております。
+              </Typography>
+              <Typography
+                variant="small"
+                color="white"
+                className="font-medium uppercase"
+              >
+                島崎 法隆{" "}
+                <span className="font-normal opacity-60">
+                  代表取締役 @ ClockWise System.inc
+                </span>
+              </Typography>
             </div>
-          ))}
+            <div className="col-span-2 flex w-full shrink-0 md:!justify-end">
+              <Image
+                width={256}
+                height={256}
+                src="/image/ceo.1.png"
+                alt="testimonial image"
+                className="h-full w-2/4 object-contain md:!w-2/3"
+              />
+            </div>
+          </div>
         </Carousel>
+
+        
       </div>
     </section>
   );

@@ -14,26 +14,27 @@ import FeatureCard from "@/components/feature-card";
 const FEATURES = [
   {
     icon: InboxIcon,
-    title: "Hands-On Projects",
+    title: "ドライバーシフト管理の効率化",
     description:
-      "Apply your knowledge to real-world projects, building a robust portfolio.",
+      "システムを使用しドライバーから希望シフトを提出事業主はその状況を元に各ドライバーのシフトを調整できる",
   },
   {
     icon: AcademicCapIcon,
-    title: "Career Opportunities",
+    title: "出退勤管理の効率化",
     description:
-      "React developers are in high demand and this course is designed for you!",
+      "出退勤状況が一目でわかるダッシュボード出退勤情報をリアルタイムで管理画面に反映ドライバーは1タップで勤怠管理",
   },
   {
     icon: CheckBadgeIcon,
-    title: "Flexible Learning",
-    description: "Access course materials whenever it suits your schedule.",
+    title: "精算業務の効率化",
+    description:
+      "ドライバーへの支払い金額確認・ドライバーからの請求をボタンひとつで簡単操作",
   },
 ];
 
 export function OnlineCourse() {
   return (
-    <section className="py-28 px-8">
+    <section className="py-28 px-8 bg-blue-gray-50">
       <div className="container mx-auto text-center mb-24">
         <Typography variant="h2" color="blue-gray">
           サービス
@@ -44,7 +45,7 @@ export function OnlineCourse() {
           <Image
             width={768}
             height={500}
-            src="/image/Hero_logo.png"
+            src="/image/hero.png"
             className="h-full max-h-[500px] w-full object-cover scale-110"
             alt="online course"
           />
@@ -63,8 +64,7 @@ export function OnlineCourse() {
             ケイラクラウドとは軽貨物配送業に特化した業務管理システムです。
             <br></br>
             軽貨物配送事業者の
-            業務を効率化及びドライバーの業務も効率化して軽貨物配送業に関わる全員の経営をラクにする
-            システムです。
+            業務を効率化及びドライバーの業務も効率化して軽貨物配送業に関わる全員の経営をラクにします。
           </Typography>
 
           <div className="col-span-2 grid grid-cols-1 gap-10 sm:grid-cols-3 ">
