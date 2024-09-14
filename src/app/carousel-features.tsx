@@ -68,15 +68,13 @@ export function CarouselFeatures() {
               <Image
                 width={256}
                 height={256}
-                src="/image/ceo.1.png"
+                src="/image/avatar3.jpg"
                 alt="testimonial image"
                 className="h-full w-2/4 object-contain md:!w-2/3"
               />
             </div>
           </div>
         </Carousel>
-
-        
       </div>
     </section>
   );
