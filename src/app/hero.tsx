@@ -42,7 +42,7 @@ function Hero() {
           >
             {(style) => (
               <Typography
-                {...({} as any)} {/* 型アサーションでエラーを無視 */}
+                {...({} as any)}
                 variant="lead"
                 color="white"
                 className="mt-6 mb-10 w-full md:max-w-full lg:max-w-3xl"
@@ -59,5 +59,4 @@ function Hero() {
     </div>
   );
 }
-
 export default Hero;
