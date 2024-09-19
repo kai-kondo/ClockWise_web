@@ -106,7 +106,7 @@ export function OnlineCourse() {
           <Image
             className="object-cover object-center rounded"
             alt="hero"
-            src="/image/Hero2.png"
+            src="/image/hero3.png"
             width={720}
             height={600}
           />
