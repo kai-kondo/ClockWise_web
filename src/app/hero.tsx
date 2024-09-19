@@ -24,7 +24,7 @@ function Hero() {
               opacity: spring(1, { stiffness: 30, damping: 20, delay: 1000 }),
             }}
           >
-            {(style) => (
+            {(style: { opacity: number }) => ( // 型を明示的に指定
               <Typography
                 {...({} as any)}
                 variant="h1"
@@ -40,7 +40,7 @@ function Hero() {
             defaultStyle={{ opacity: 0 }}
             style={{ opacity: spring(1, { stiffness: 30, damping: 20 }) }}
           >
-            {(style) => (
+            {(style: { opacity: number }) => ( // 型を明示的に指定
               <Typography
                 {...({} as any)}
                 variant="lead"
