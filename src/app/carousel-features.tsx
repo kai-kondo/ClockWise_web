@@ -8,18 +8,26 @@ export function CarouselFeatures() {
   return (
     <section className="px-8 pt-40 pb-20">
       <div className="flex mb-16 flex-col items-center">
-        <Typography variant="h2" className="text-center mb-2" color="blue-gray">
+        {/* 型アサーションを追加してエラーを回避 */}
+        <Typography
+          variant="h2"
+          className="text-center mb-2"
+          color="blue-gray"
+          {...({} as any)}
+        >
           経営者ご挨拶
         </Typography>
         <Typography
           variant="lead"
           className="mb-3 w-full text-center font-normal !text-gray-500 lg:w-10/12"
+          {...({} as any)}
         >
           Discover what our students have to say about our course!
         </Typography>
       </div>
       <div className="container mx-auto !rounded-lg bg-[url('/image/Background.png')] bg-center py-10 lg:px-16">
         <Carousel
+          {...({} as any)}
           transition={{ duration: 1 }}
           nextArrow={() => <></>}
           prevArrow={() => <></>}
@@ -40,6 +48,7 @@ export function CarouselFeatures() {
           <div className="!relative flex grid-cols-1 flex-col-reverse gap-6 px-10 py-14 md:grid md:grid-cols-5  md:gap-14 md:py-20">
             <div className="col-span-3 flex flex-col items-start justify-center">
               <Typography
+                {...({} as any)}
                 variant="lead"
                 color="white"
                 className="mb-5 text-xl font-normal "
@@ -54,6 +63,7 @@ export function CarouselFeatures() {
                 「お客様に最高の満足度の商品を提供する」という理念を元、ソフトウェアとテクノロジーの力で邁進しよりクリエイティブで豊かな働き方の提案をしていきたいと考えております。
               </Typography>
               <Typography
+                {...({} as any)}
                 variant="small"
                 color="white"
                 className="font-medium uppercase"

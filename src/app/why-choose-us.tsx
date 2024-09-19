@@ -22,10 +22,18 @@ function Option({ icon: Icon, title, children }: OptionProps) {
         <Icon className="text-gray-900 h-6 w-6" />
       </div>
       <div>
-        <Typography variant="h5" color="blue-gray" className="mb-2">
+        <Typography
+          {...({} as any)}
+          variant="h5"
+          color="blue-gray"
+          className="mb-2"
+        >
           {title}
         </Typography>
-        <Typography className="mb-2 md:w-10/12 font-normal !text-gray-500">
+        <Typography
+          {...({} as any)}
+          className="mb-2 md:w-10/12 font-normal !text-gray-500"
+        >
           {children}
         </Typography>
       </div>

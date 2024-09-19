@@ -6,9 +6,9 @@ import CourseCard from "@/components/course-card";
 const OTHER_COURSES = [
   {
     img: "/image/blogs/blog-1.svg",
-    title: "Future of Web Development: Trends and Innovations",
-    desc: "Discover the latest trends and innovations shaping the future of web development.",
-    buttonLabel: "register for free",
+    title: "プログラミングスキルを上達させるには？",
+    desc: "みなさんこんにちは...",
+    buttonLabel: "Reed More",
   },
   {
     img: "/image/blogs/blog2.svg",
@@ -34,15 +34,20 @@ export function OtherCourses() {
   return (
     <section className="pb-20 px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h2" color="blue-gray" className="mb-4">
-          Other Courses
+        <Typography
+          {...({} as any)}
+          variant="h2"
+          color="blue-gray"
+          className="mb-6 mt-12"
+        >
+          ClockWiseブログ
         </Typography>
         <Typography
+          {...({} as any)}
           variant="lead"
           className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
         >
-          Looking to elevate your web development skills? Browse through 1,000+
-          web development courses and find the one that fits your needs.
+          ClockWiseでの日々の日常や技術に関することを記事でまとめています
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">

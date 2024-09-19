@@ -30,11 +30,8 @@ const CompanyInfo: React.FC = () => {
               連絡先
             </th>
             <td className="px-6 py-4 text-sm text-gray-900">
-              フリーダイヤル {companyInfo.contact.tollFree}
               <br />
               TEL {companyInfo.contact.tel}
-              <br />
-              FAX {companyInfo.contact.fax}
             </td>
           </tr>
           <tr className="border-b">
