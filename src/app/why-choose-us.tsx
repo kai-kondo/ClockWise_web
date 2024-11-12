@@ -46,9 +46,6 @@ export function WhyChooseUs() {
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col">
-          <div className="h-1 bg-gray-200 rounded overflow-hidden">
-            <div className="w-24 h-full bg-blue-500"></div>
-          </div>
           <motion.div
             className="flex flex-col text-center w-full mb-20"
             initial={{ opacity: 0, y: -50 }}
@@ -85,7 +82,12 @@ export function WhyChooseUs() {
             <p className="text-base leading-relaxed mt-2">
               軽貨物配送業に特化した業務管理Webアプリケーションを開発・運用
             </p>
-            <a className="text-blue-500 inline-flex items-center mt-3">
+            <a
+              href="https://www.kraku.jp/" // 外部サイトのURL
+              target="_blank" // 新しいタブで開く
+              rel="noopener noreferrer" // セキュリティのために追加
+              className="text-blue-500 inline-flex items-center mt-3"
+            >
               詳細はこちら
               <svg
                 fill="none"

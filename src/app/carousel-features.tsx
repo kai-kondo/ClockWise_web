@@ -55,6 +55,7 @@ export function CarouselFeatures() {
               >
                 <strong>~出会いを大切にともに進歩を~ </strong>
                 <br></br>
+                <br></br>
                 工作機械メーカを経て、ものづくり業界でのお客様の要望を満たすにはソフトウェアの開発が必要であると感じClockWiseSystemを創業しました。
                 <br></br>
                 現在は精密板金加工向けソフトウェア開発と並行して軽貨物配送業向けの業務管理システム「ケイラクラウド」を開発・運用を行っています。
@@ -78,9 +79,9 @@ export function CarouselFeatures() {
               <Image
                 width={256}
                 height={256}
-                src="/image/avatar3.jpg"
+                src="/image/ceo4.png"
                 alt="testimonial image"
-                className="h-full w-2/4 object-contain md:!w-2/3"
+                className="h-full w-2/5 object-contain md:!w-2/3"
               />
             </div>
           </div>

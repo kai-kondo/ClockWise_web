@@ -22,6 +22,7 @@ export function OnlineCourse() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.2 }}
             viewport={{ once: true }}
+            whileHover={{ scale: 1.2 }} // カーソルが来たときに文字を大きく
           >
             ABOUT US
             <br className="hidden lg:inline-block" />
@@ -33,11 +34,34 @@ export function OnlineCourse() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
+            whileHover={{ scale: 1.1 }} // カーソルが来たときに少し文字を大きく
           >
             私どもは、一般的なデスクトップアプリケーションとWebアプリケーションの両方を開発し
             <br className="hidden lg:inline-block" />
             それに加え、企業向け新人研修の講師役を行っている会社です。
           </motion.p>
+        </motion.div>
+
+        {/* 右横に画像を追加 */}
+        <motion.div
+          className="lg:w-1/2 w-full md:pl-16 flex justify-center"
+          initial={{ opacity: 0, x: 50 }} // 初期状態で右からスライド
+          whileInView={{ opacity: 1, x: 0 }} // ビューに入ったときに透明度を1、位置を元に戻す
+          transition={{
+            duration: 1.2,
+            ease: "easeOut",
+            type: "spring",
+            stiffness: 300,
+          }} // 両方のトランジションを統合
+          viewport={{ once: true }}
+        >
+          <Image
+            src="/image/aboutus.png"
+            alt="About Us"
+            width={900} // 画像の幅を指定
+            height={900} // 画像の高さを指定
+            className="object-cover object-center rounded-lg"
+          />
         </motion.div>
       </div>
 
@@ -91,9 +115,18 @@ export function OnlineCourse() {
             で戦っているお客様へ、「ケイラクラウド」を使って頂くことで、高収益に結び付けることを目指しています。
           </motion.p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
+            <motion.a
+              href="https://www.kraku.jp/" // 外部サイトのURL
+              target="_blank" // 新しいタブで開く
+              rel="noopener noreferrer" // セキュリティのために追加
+              className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
+              whileHover={{
+                scale: 1.1, // ホバー時に拡大
+                transition: { duration: 0.3 }, // アニメーションの速さ
+              }}
+            >
               詳細はこちら
-            </button>
+            </motion.a>
           </div>
         </motion.div>
         <motion.div
@@ -122,10 +155,12 @@ export function OnlineCourse() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <img
+          <Image
             className="object-cover object-center rounded"
             alt="hero"
-            src="/image/30408460_s.jpg"
+            src="/image/30408460_s.jpg" // 画像のソースを指定
+            width={720} // 幅を指定
+            height={600} // 高さを指定
           />
         </motion.div>
         <motion.div
@@ -159,6 +194,18 @@ export function OnlineCourse() {
             弊社のメンバーは、長年精密板金加工のソフトウェア開発に携わっており、現場での経験が豊富ですので、
             安心してお任せください。
           </motion.p>
+
+          <div className="flex justify-center">
+            <motion.button
+              className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
+              whileHover={{
+                scale: 1.1, // ホバー時に1.1倍に拡大
+                transition: { duration: 0.3 }, // アニメーションの速さ
+              }}
+            >
+              詳細はこちら
+            </motion.button>
+          </div>
         </motion.div>
       </div>
 
@@ -192,11 +239,6 @@ export function OnlineCourse() {
             企業の受講生は新人がメインですので、いまどきのZ世代の考え方、行動、感性も肌で感じて、同時に世代間
             ギャップも乗り越えて、社会のお役に立てればと考えています。
           </motion.p>
-          <div className="flex justify-center">
-            <button className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
-              詳細はこちら
-            </button>
-          </div>
         </motion.div>
         <motion.div
           className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
