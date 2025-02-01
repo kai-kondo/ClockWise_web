@@ -3,6 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion"; // framer-motionをインポート
+import Link from "next/link";
+
 
 export function OnlineCourse() {
   return (
@@ -196,15 +198,17 @@ export function OnlineCourse() {
           </motion.p>
 
           <div className="flex justify-center">
-            <motion.button
-              className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
-              whileHover={{
-                scale: 1.1, // ホバー時に1.1倍に拡大
-                transition: { duration: 0.3 }, // アニメーションの速さ
-              }}
-            >
-              詳細はこちら
-            </motion.button>
+            <Link href="/detail">
+              <motion.button
+                className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
+                whileHover={{
+                  scale: 1.1, // ホバー時に1.1倍に拡大
+                  transition: { duration: 0.3 }, // アニメーションの速さ
+                }}
+              >
+                詳細はこちら
+              </motion.button>
+            </Link>
           </div>
         </motion.div>
       </div>
